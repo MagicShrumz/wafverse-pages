@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WafVerse Privacy Policy</title>
+<style>
+  body{margin:0;background:#0B0B10;color:#F4F4F8;font:16px/1.6 system-ui,sans-serif}
+  main{max-width:680px;margin:0 auto;padding:48px 20px}
+  h1{font-size:2rem;margin:0 0 8px}
+  h2{font-size:1.15rem;margin:32px 0 8px;color:#C4B5FD}
+  a{color:#A78BFA}
+  p,li{color:#D6D6E2}
+</style>
+</head>
+<body>
+<main>
+  <h1>WafVerse Privacy Policy</h1>
+  <p>Last updated: 28 October 2026</p>
+
+  <h2>Summary</h2>
+  <p>WafVerse is a private Android app. It has no servers and no analytics, and it does not share data with anyone. The only data that ever leaves the device for Google is the optional sync file described below, and it goes to the Google Drive of the person who signed in.</p>
+
+  <h2>Google sign-in and Drive access</h2>
+  <p>If the owner turns on sync, the app uses Google sign-in and requests one permission: <code>https://www.googleapis.com/auth/drive.file</code>. This lets the app read and write only the file it created, <code>wafverse-sync.json</code>, in the signed-in account's own Google Drive. The app cannot see, read or change any other file in Drive. The app does not use Google user data for anything other than this sync.</p>
+
+  <h2>What the sync file contains</h2>
+  <ul>
+    <li>Titles and their IDs that appear in Continue Watching, Watchlist and Favorites.</li>
+    <li>How far playback had progressed, and when.</li>
+    <li>Which items were removed, so removals reach the other devices.</li>
+  </ul>
+  <p>It does not contain stream links, passwords, access tokens, IPTV details or artwork.</p>
+
+  <h2>Data stored on the device</h2>
+  <p>Connection details the owner types into the app, and the Google sign-in token, are stored encrypted on the device using the Android Keystore. They are not sent anywhere except to the service they belong to.</p>
+
+  <h2>Sharing, selling and advertising</h2>
+  <p>No data is sold, shared with third parties, used for advertising, or transferred to anyone.</p>
+
+  <h2>Stopping sync and deleting data</h2>
+  <ul>
+    <li>Disconnect sync in the app's settings.</li>
+    <li>Delete <code>wafverse-sync.json</code> from Google Drive.</li>
+    <li>Remove the app's access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+
+  <h2>Questions</h2>
+  <p>Open an issue on the repository that hosts this page.</p>
+</main>
+</body>
+</html>
